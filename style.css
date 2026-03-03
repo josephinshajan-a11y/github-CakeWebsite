@@ -506,6 +506,7 @@ footer {
 
     .hero-content p {
         font-size: 0.95rem;
+        max-width: 280px;
     }
 
     .showcase,
