@@ -1,0 +1,380 @@
+═══════════════════════════════════════════════════════════════════════
+🎂 QUICK EDIT REFERENCE - COPY & PASTE GUIDE
+═══════════════════════════════════════════════════════════════════════
+
+OPEN THESE FILES IN VS CODE:
+- index.html (content & text)
+- style.css (colors & design)
+- script.js (advanced only)
+
+═══════════════════════════════════════════════════════════════════════
+
+1️⃣  CHANGE BUSINESS NAME
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 25
+
+FIND:
+<span>Every Cakes</span>
+
+CHANGE TO:
+<span>Cream & Crumb</span>
+
+SAVE: Ctrl+S ✓
+
+
+2️⃣  CHANGE MAIN HEADING
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 44
+
+FIND:
+<h1>Handcrafted Cakes for Every Occasion</h1>
+
+CHANGE TO:
+<h1>Your heading here</h1>
+
+SAVE: Ctrl+S ✓
+
+
+3️⃣  CHANGE DESCRIPTION
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 45
+
+FIND:
+<p>Beautifully designed, freshly baked cakes made with love and care.</p>
+
+CHANGE TO:
+<p>Your description here</p>
+
+SAVE: Ctrl+S ✓
+
+
+4️⃣  CHANGE CONTACT EMAIL
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 103
+
+FIND:
+Email: hello@everycakes.com
+
+CHANGE TO:
+Email: your-email@gmail.com
+
+SAVE: Ctrl+S ✓
+
+
+5️⃣  CHANGE CONTACT PHONE
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 103
+
+FIND:
+Phone: +44 1923 123456
+
+CHANGE TO:
+Phone: +44 XXXX XXXXXX
+
+SAVE: Ctrl+S ✓
+
+
+6️⃣  CHANGE LOCATION/CITY
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINE: 103
+
+FIND:
+Watford, UK
+
+CHANGE TO:
+Your City, UK
+
+SAVE: Ctrl+S ✓
+
+
+7️⃣  CHANGE MAIN COLOR (Brown)
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+LINES: 7-14
+
+FIND:
+:root {
+    --warm-brown: #a78167;
+}
+
+CHANGE TO (find a color at colorpicker.com):
+:root {
+    --warm-brown: #YOUR_COLOR_CODE;
+}
+
+Example: #ff6b9d (pink) or #8b4513 (dark brown)
+
+SAVE: Ctrl+S ✓
+
+
+8️⃣  CHANGE SECONDARY COLOR (Dark Brown)
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+LINES: 7-14
+
+FIND:
+:root {
+    --dark-brown: #6b5444;
+}
+
+CHANGE TO:
+:root {
+    --dark-brown: #YOUR_COLOR_CODE;
+}
+
+SAVE: Ctrl+S ✓
+
+
+9️⃣  CHANGE GOLD ACCENT COLOR
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+LINES: 7-14
+
+FIND:
+:root {
+    --gold: #d4af7a;
+}
+
+CHANGE TO:
+:root {
+    --gold: #YOUR_COLOR_CODE;
+}
+
+SAVE: Ctrl+S ✓
+
+
+🔟 ADD YOUR CAKE PHOTOS
+─────────────────────────────────────────────────────────────────────
+
+Steps:
+1. Find/download cake photos
+2. Save as JPG files
+3. Name them EXACTLY:
+   - cake-hero.jpg
+   - cake1.jpg
+   - cake2.jpg
+   - cake3.jpg
+   - birthday-cake.jpg
+   - wedding-cake.jpg
+   - dessert-cake.jpg
+
+4. Put in CakeWebsite folder
+5. Website automatically shows them! ✓
+
+NO NEED TO EDIT HTML - It's already set up!
+
+
+1️⃣1️⃣  CHANGE CAKE TITLES & DESCRIPTIONS
+─────────────────────────────────────────────────────────────────────
+
+FILE: index.html
+LINES: 75-95
+
+FIND:
+<h3>Birthday Cakes</h3>
+<p>Celebratory cakes for special moments</p>
+
+CHANGE TO:
+<h3>Custom Birthday Cakes</h3>
+<p>Your description here</p>
+
+Same for Wedding and Dessert sections.
+
+SAVE: Ctrl+S ✓
+
+
+1️⃣2️⃣  CHANGE MAIN HEADING SIZE
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+FIND (search: "hero-content h1"):
+.hero-content h1 {
+    font-size: 3.5rem;
+}
+
+CHANGE SIZE:
+- 2.5rem = smaller
+- 3rem = medium
+- 3.5rem = large (current)
+- 4rem = very large
+
+SAVE: Ctrl+S ✓
+
+
+1️⃣3️⃣  CHANGE FONT (Advanced)
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+FIND:
+font-family: 'Playfair Display', serif;
+
+CHANGE TO (pick one from Google Fonts):
+- font-family: 'Cormorant Garamond', serif;
+- font-family: 'Libre Baskerville', serif;
+- font-family: 'Abril Fatface', serif;
+
+SAVE: Ctrl+S ✓
+
+
+1️⃣4️⃣  CHANGE SPACING (More/Less Space)
+─────────────────────────────────────────────────────────────────────
+
+FILE: style.css
+FIND:
+.hero {
+    padding: 4rem 5%;
+}
+
+CHANGE NUMBER:
+- padding: 2rem 5%; (less space)
+- padding: 4rem 5%; (normal - current)
+- padding: 6rem 5%; (more space)
+
+SAVE: Ctrl+S ✓
+
+
+═══════════════════════════════════════════════════════════════════════
+
+COLOR PALETTE SUGGESTIONS
+─────────────────────────────────────────────────────────────────────
+
+OPTION 1: Warm & Romantic
+--warm-brown: #d4a574;
+--dark-brown: #8b6f47;
+--gold: #f4d03f;
+
+OPTION 2: Modern & Elegant
+--warm-brown: #b8956a;
+--dark-brown: #6b5b44;
+--gold: #d4af37;
+
+OPTION 3: Soft & Pastels
+--warm-brown: #d8a9a0;
+--dark-brown: #8b6b5f;
+--gold: #f4d9c4;
+
+OPTION 4: Bold & Vibrant
+--warm-brown: #ff8c42;
+--dark-brown: #d63230;
+--gold: #f4d03f;
+
+═══════════════════════════════════════════════════════════════════════
+
+HOW TO FIND COLOR CODES
+─────────────────────────────────────────────────────────────────────
+
+1. Go to https://colorpicker.com
+2. Click a color or type a name (like "pink", "blue", etc)
+3. Copy the HEX code (like #ff6b9d)
+4. Paste into style.css
+5. Replace the old color code
+6. Save!
+
+═══════════════════════════════════════════════════════════════════════
+
+KEYBOARD SHORTCUTS (Super Useful!)
+─────────────────────────────────────────────────────────────────────
+
+Ctrl+S          = Save file
+Ctrl+Z          = Undo (oops!)
+Ctrl+Y          = Redo (bring back!)
+Ctrl+F          = Find text in file
+Ctrl+H          = Find and Replace
+Ctrl+/          = Comment/uncomment line
+Alt+Up          = Move line up
+Alt+Down        = Move line down
+Ctrl+D          = Select next occurrence
+
+═══════════════════════════════════════════════════════════════════════
+
+TESTING YOUR CHANGES
+─────────────────────────────────────────────────────────────────────
+
+After you save (Ctrl+S):
+
+1. Look at browser preview (if using Live Server)
+2. It updates automatically!
+3. If it doesn't, refresh browser (F5)
+4. Check for red error messages (at bottom of VS Code)
+
+═══════════════════════════════════════════════════════════════════════
+
+FILE STRUCTURE REMINDER
+─────────────────────────────────────────────────────────────────────
+
+CakeWebsite/
+├── 📄 index.html          ← CONTENT & TEXT
+├── 📄 style.css           ← COLORS & DESIGN
+├── 📄 script.js           ← (Don't touch!)
+├── 📄 README.md           ← (Full guide)
+├── 🖼️ cake-background.jpg ← Background image
+│
+├── 🖼️ cake-hero.jpg       ← Add YOUR photos here
+├── 🖼️ cake1.jpg
+├── 🖼️ cake2.jpg
+├── 🖼️ cake3.jpg
+├── 🖼️ birthday-cake.jpg
+├── 🖼️ wedding-cake.jpg
+└── 🖼️ dessert-cake.jpg
+
+═══════════════════════════════════════════════════════════════════════
+
+MOST COMMON EDITS (Ranked by Importance)
+─────────────────────────────────────────────────────────────────────
+
+1. Change business name (index.html line 25)
+2. Add your photos (folder)
+3. Change main heading (index.html line 44)
+4. Change colors (style.css lines 7-14)
+5. Change contact info (index.html line 103)
+6. Change cake titles & descriptions (index.html 75-95)
+
+═══════════════════════════════════════════════════════════════════════
+
+SEARCH COMMANDS (Use Ctrl+F to find these)
+─────────────────────────────────────────────────────────────────────
+
+Search in index.html:
+- "Every Cakes" → business name
+- "Handcrafted Cakes" → main heading
+- "Beautifully designed" → description
+- "Birthday Cakes" → cake titles
+- "hello@everycakes.com" → email
+- "Watford" → location
+
+Search in style.css:
+- ":root" → all colors
+- "font-size" → text sizes
+- "padding" → spacing
+- "background" → colors
+- "@media" → mobile responsive
+
+═══════════════════════════════════════════════════════════════════════
+
+YOU'RE READY! START HERE:
+─────────────────────────────────────────────────────────────────────
+
+1. Open index.html in VS Code
+2. Find and change business name (line 25)
+3. Find and change main heading (line 44)
+4. Add your cake photos to folder
+5. Change colors in style.css
+6. Check preview - it updates automatically!
+7. When happy, publish to GitHub/Netlify! 🎉
+
+═══════════════════════════════════════════════════════════════════════
