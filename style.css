@@ -77,7 +77,7 @@ nav {
 .logo-icon img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .nav-links {
@@ -236,7 +236,7 @@ nav {
 .showcase-card img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -348,7 +348,7 @@ nav {
 .offer-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: transform 0.4s ease;
 }
 
@@ -473,6 +473,10 @@ footer {
 
     .hero-image {
         height: 400px;
+    }
+
+    .hero-content p {
+        max-width: 450px;
     }
 
     .showcase,
