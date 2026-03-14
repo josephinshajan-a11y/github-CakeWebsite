@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream & Crumb - Dessert Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+              <img src="cake-logo.png" alt="Logo">
+            </div>
+            <span>Cream & Crumb</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cakes">Cakes</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-subpage">
+        <div class="hero-subpage-content">
+            <h1>Our Dessert Cakes</h1>
+            <p>Indulgent and decadent cakes for the dessert lover</p>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="cake-gallery">
+        <div class="section-header">
+            <div class="section-label">Dessert Collection</div>
+            <h2>Dessert Cake Gallery</h2>
+        </div>
+
+        <div class="cake-grid">
+            <!-- Cake 1 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-1.png" alt="Dark Chocolate Decadence">
+                </div>
+                <div class="cake-info">
+                    <h3>Dark Chocolate Decadence</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Rich dark chocolate layers with intense chocolate ganache</p>
+                    <p class="price">£42.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Dark Chocolate Decadence', 42.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 2 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-2.png" alt="Tiramisu Dream">
+                </div>
+                <div class="cake-info">
+                    <h3>Tiramisu Dream</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Traditional tiramisu layers with coffee-soaked sponge</p>
+                    <p class="price">£40.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Tiramisu Dream', 40.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 3 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-3.png" alt="Salted Caramel Drip">
+                </div>
+                <div class="cake-info">
+                    <h3>Salted Caramel Drip</h3>
+                    <div class="rating">⭐⭐⭐⭐ (4.9)</div>
+                    <p class="description">Caramel cake with dramatic chocolate drip and sea salt</p>
+                    <p class="price">£45.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Salted Caramel Drip', 45.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 4 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-4.png" alt="Raspberry Cheesecake">
+                </div>
+                <div class="cake-info">
+                    <h3>Raspberry Cheesecake</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Creamy cheesecake with fresh raspberry topping</p>
+                    <p class="price">£43.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Raspberry Cheesecake', 43.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 5 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-5.png" alt="Pistachio Paradise">
+                </div>
+                <div class="cake-info">
+                    <h3>Pistachio Paradise</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Delicate pistachio cake with pistachio cream layers</p>
+                    <p class="price">£44.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Pistachio Paradise', 44.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 6 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-6.png" alt="Lava Chocolate Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Lava Chocolate Cake</h3>
+                    <div class="rating">⭐⭐⭐⭐ (4.8)</div>
+                    <p class="description">Molten chocolate center with velvety chocolate exterior</p>
+                    <p class="price">£46.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Lava Chocolate Cake', 46.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 7 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-7.png" alt="Passion Fruit Elegance">
+                </div>
+                <div class="cake-info">
+                    <h3>Passion Fruit Elegance</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Tropical passion fruit curd with light sponge layers</p>
+                    <p class="price">£41.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Passion Fruit Elegance', 41.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 8 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-8.png" alt="White Chocolate Luxe">
+                </div>
+                <div class="cake-info">
+                    <h3>White Chocolate Luxe</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Premium white chocolate cake with white chocolate mousse</p>
+                    <p class="price">£44.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('White Chocolate Luxe', 44.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 9 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="birthday-9.png" alt="Black Forest Indulgence">
+                </div>
+                <div class="cake-info">
+                    <h3>Black Forest Indulgence</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Classic black forest with cherries and chocolate shavings</p>
+                    <p class="price">£45.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Black Forest Indulgence', 45.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>&copy; 2026 Cream & Crumb. All rights reserved. | Watford, UK | Email: orders@creamandcrumb.com</p>
+    </footer>
+
+    <!-- SHOPPING CART MODAL -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>Shopping Cart</h2>
+                <button onclick="toggleCart()" class="close-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p style="text-align: center; color: #999;">Your cart is empty</p>
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <strong>Total: £<span id="cart-total">0.00</span></strong>
+                </div>
+                <button onclick="checkoutWhatsApp()" class="checkout-btn">Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cream & Crumb - Wedding Cakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+              <img src="cake-logo.png" alt="Logo">
+            </div>
+            <span>Cream & Crumb</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cakes">Cakes</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-subpage">
+        <div class="hero-subpage-content">
+            <h1>Our Wedding Cakes</h1>
+            <p>Elegant and sophisticated cakes for your special day</p>
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="cake-gallery">
+        <div class="section-header">
+            <div class="section-label">Wedding Collection</div>
+            <h2>Wedding Cake Gallery</h2>
+        </div>
+
+        <div class="cake-grid">
+            <!-- Cake 1 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-1.png" alt="Classic White Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Classic White Wedding</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Timeless white frosting with delicate floral arrangements</p>
+                    <p class="price">£65.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Classic White Wedding', 65.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 2 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-2.png" alt="Elegant Gold Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Elegant Gold Accent</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Luxurious design with gold leaf accents and rose details</p>
+                    <p class="price">£75.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Elegant Gold Accent', 75.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 3 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-3.png" alt="Romantic Blush Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Romantic Blush Tones</h3>
+                    <div class="rating">⭐⭐⭐⭐ (4.8)</div>
+                    <p class="description">Soft pink hues with romantic floral decorations</p>
+                    <p class="price">£70.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Romantic Blush Tones', 70.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 4 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-4.png" alt="Modern Minimalist Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Modern Minimalist</h3>
+                    <div class="rating">⭐⭐⭐⭐ (4.7)</div>
+                    <p class="description">Clean lines with contemporary design and fresh flowers</p>
+                    <p class="price">£68.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Modern Minimalist', 68.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 5 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-5.png" alt="Vintage Lace Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Vintage Lace Design</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Intricate lace piping with vintage-inspired elegance</p>
+                    <p class="price">£72.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Vintage Lace Design', 72.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 6 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-6.png" alt="Garden Romance Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Garden Romance</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Cascading fresh flowers with organic, romantic style</p>
+                    <p class="price">£75.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Garden Romance', 75.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 7 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-7.png" alt="Sophisticated Chic Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Sophisticated Chic</h3>
+                    <div class="rating">⭐⭐⭐⭐ (4.8)</div>
+                    <p class="description">Contemporary design with metallic accents and pearls</p>
+                    <p class="price">£73.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Sophisticated Chic', 73.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 8 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-8.png" alt="Royal Elegance Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Royal Elegance</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Luxurious gold details with premium white chocolate</p>
+                    <p class="price">£78.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Royal Elegance', 78.00)">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Cake 9 -->
+            <div class="cake-card">
+                <div class="cake-image">
+                    <img src="wedding-1.png" alt="Timeless Elegance Wedding Cake">
+                </div>
+                <div class="cake-info">
+                    <h3>Timeless Elegance</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐ (5.0)</div>
+                    <p class="description">Classic and timeless design perfect for any wedding</p>
+                    <p class="price">£70.00</p>
+                    <button class="add-to-cart-btn" onclick="addToCart('Timeless Elegance', 70.00)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>&copy; 2026 Cream & Crumb. All rights reserved. | Watford, UK | Email: orders@creamandcrumb.com</p>
+    </footer>
+
+    <!-- SHOPPING CART MODAL -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h2>Shopping Cart</h2>
+                <button onclick="toggleCart()" class="close-btn">&times;</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p style="text-align: center; color: #999;">Your cart is empty</p>
+            </div>
+            <div class="cart-modal-footer">
+                <div class="cart-total">
+                    <strong>Total: £<span id="cart-total">0.00</span></strong>
+                </div>
+                <button onclick="checkoutWhatsApp()" class="checkout-btn">Checkout via WhatsApp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
