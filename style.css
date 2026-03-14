@@ -477,6 +477,152 @@ footer {
 }
 
 /* ═══════════════════════════════════════════════════════════════════ */
+/* SHOPPING CART MODAL */
+/* ═══════════════════════════════════════════════════════════════════ */
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    overflow-y: auto;
+}
+
+.cart-modal.active {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.cart-modal-content {
+    background-color: white;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-modal-header {
+    padding: 2rem;
+    border-bottom: 1px solid var(--beige);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-modal-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--dark-text);
+    font-family: 'Playfair Display', serif;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--warm-brown);
+    transition: all 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--dark-brown);
+}
+
+.cart-items {
+    flex: 1;
+    padding: 2rem;
+    overflow-y: auto;
+    background-color: var(--light-cream);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.cart-item-info h4 {
+    margin: 0 0 0.5rem 0;
+    color: var(--dark-text);
+    font-family: 'Playfair Display', serif;
+}
+
+.cart-item-info p {
+    margin: 0;
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.cart-item-price {
+    font-weight: bold;
+    color: var(--warm-brown);
+    font-size: 1.1rem;
+}
+
+.remove-btn {
+    background-color: var(--warm-brown);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    margin-left: 1rem;
+}
+
+.remove-btn:hover {
+    background-color: var(--dark-brown);
+    transform: translateY(-2px);
+}
+
+.cart-modal-footer {
+    padding: 2rem;
+    border-top: 1px solid var(--beige);
+    background-color: var(--light-cream);
+}
+
+.cart-total {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: var(--dark-text);
+    text-align: right;
+}
+
+.checkout-btn {
+    width: 100%;
+    background-color: var(--warm-brown);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Lora', serif;
+}
+
+.checkout-btn:hover {
+    background-color: var(--dark-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(107, 84, 68, 0.3);
+}
+
+/* ═══════════════════════════════════════════════════════════════════ */
 /* RESPONSIVE DESIGN - TABLETS & MOBILE */
 /* ═══════════════════════════════════════════════════════════════════ */
 
