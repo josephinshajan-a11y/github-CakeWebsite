@@ -134,6 +134,36 @@ nav {
     transform: translateY(-2px);
 }
 
+.cart-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background-color: rgba(165, 129, 103, 0.1);
+    position: relative;
+}
+
+.cart-icon:hover {
+    background-color: rgba(165, 129, 103, 0.2);
+    transform: scale(1.1);
+}
+
+#cart-count {
+    font-size: 0.8rem;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: var(--warm-brown);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ═══════════════════════════════════════════════════════════════════ */
 /* HERO SECTION */
 /* ═══════════════════════════════════════════════════════════════════ */
@@ -480,6 +510,8 @@ footer {
     .hero-content p {
         max-width: 450px;
     }
+
+    .showcase,
 
     .nav-links {
         gap: 1.5rem;
