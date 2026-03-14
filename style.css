@@ -506,6 +506,10 @@ footer {
         margin-top: 1rem;
     }
 
+    .hero {
+        min-height: 100vh;  ← ADD THIS!
+    }
+
     .hero-content h1 {
         font-size: 2rem;
     }
