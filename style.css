@@ -507,7 +507,11 @@ footer {
     }
 
     .hero {
-        min-height: 100vh;  ← ADD THIS!
+    min-height: 450px;
+    padding: 2rem 5%;
+    background-size: cover;
+    background-position: center right;
+    background-attachment: scroll;
     }
 
     .hero-content h1 {
