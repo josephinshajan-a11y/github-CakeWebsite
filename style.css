@@ -266,7 +266,7 @@ nav {
 /* ═══════════════════════════════════════════════════════════════════ */
 
 .offers-section {
-    padding: 5rem 5%;
+    padding: 0rem 5% 5rem 5%;  ← No top padding!
     background: linear-gradient(180deg, var(--light-cream) 0%, var(--cream) 100%);
 }
 
