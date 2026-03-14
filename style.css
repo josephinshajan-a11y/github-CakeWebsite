@@ -277,16 +277,17 @@ nav {
 }
 
 .section-label {
-    font-size: 0.85rem;
+    font-size: 1.1rem;  ← BIGGER FONT!
     color: var(--warm-brown);
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 2rem;  ← MORE SPACE!
+    margin-top: 2rem;  ← SPACE ABOVE!
+    margin-bottom: 0.8rem;
     font-weight: 600;
 }
 
 .section-header h2 {
-    font-size: 3.5rem;  ← BIGGER FONT!
+    font-size: 3rem;  ← KEEP SAME
     font-weight: 400;
     color: var(--dark-text);
     letter-spacing: -0.5px;
