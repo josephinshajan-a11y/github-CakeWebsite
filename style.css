@@ -281,13 +281,12 @@ nav {
     color: var(--warm-brown);
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 0.8rem;
+    margin-bottom: 2rem;  ← MORE SPACE!
     font-weight: 600;
 }
 
 .section-header h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 3.5rem;  ← BIGGER FONT!
     font-weight: 400;
     color: var(--dark-text);
     letter-spacing: -0.5px;
