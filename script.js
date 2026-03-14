@@ -90,7 +90,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Add item to cart
 function addToCart(cakeName, price) {
     const item = {
         name: cakeName,
@@ -100,6 +99,21 @@ function addToCart(cakeName, price) {
     
     cart.push(item);
     updateCartDisplay();
+    showNotification(`✅ ${cakeName} added to cart!`);
+}
+
+// Show notification
+function showNotification(message) {
+    const notification = document.getElementById('notification');
+    const notificationText = document.getElementById('notification-text');
+    
+    notificationText.textContent = message;
+    notification.classList.add('show');
+    
+    // Hide after 2 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+    }, 2000);
 }
 
 // Remove item from cart
