@@ -142,25 +142,24 @@ function updateCartDisplay() {
     }
 }
 
-// Checkout via WhatsApp
 function checkoutWhatsApp() {
     if (cart.length === 0) {
         alert('Your cart is empty!');
         return;
     }
     
-    let message = 'Hi Cream & Crumb!%0A%0AI would like to order:%0A%0A';
+    let message = 'Hi Cream & Crumb!\n\nI would like to order:\n\n';
     let total = 0;
     
     cart.forEach(item => {
-        message += `- ${item.name}: £${item.price.toFixed(2)}%0A`;
+        message += `- ${item.name}: £${item.price.toFixed(2)}\n`;
         total += parseFloat(item.price);
     });
     
-    message += `%0ATotal: £${total.toFixed(2)}%0A%0APlease confirm!`;
+    message += `\nTotal: £${total.toFixed(2)}\n\nPlease confirm!`;
     
     const whatsappNumber = '447552245878';
-    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappURL, '_blank');
     
