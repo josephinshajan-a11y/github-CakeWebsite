@@ -67,3 +67,105 @@ document.querySelectorAll('.showcase-card').forEach(card => {
         this.style.transition = 'all 0.4s ease';
     });
 });
+
+// ═══════════════════════════════════════════════════════════════════
+// SHOPPING CART FUNCTIONALITY
+// ═══════════════════════════════════════════════════════════════════
+
+let cart = [];
+
+// Toggle cart modal
+function toggleCart() {
+    const modal = document.getElementById('cart-modal');
+    modal.classList.toggle('active');
+}
+
+// Close modal when clicking outside
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('cart-modal');
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+});
+
+// Add item to cart
+function addToCart(cakeName, price) {
+    const item = {
+        name: cakeName,
+        price: price,
+        id: Date.now()
+    };
+    
+    cart.push(item);
+    updateCartDisplay();
+}
+
+// Remove item from cart
+function removeFromCart(itemId) {
+    cart = cart.filter(item => item.id !== itemId);
+    updateCartDisplay();
+}
+
+// Update cart display
+function updateCartDisplay() {
+    const cartCount = document.getElementById('cart-count');
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    
+    // Update count
+    cartCount.textContent = cart.length;
+    
+    // Update items display
+    if (cart.length === 0) {
+        cartItems.innerHTML = '<p style="text-align: center; color: #999;">Your cart is empty</p>';
+    } else {
+        let itemsHTML = '';
+        let total = 0;
+        
+        cart.forEach(item => {
+            total += parseFloat(item.price);
+            itemsHTML += `
+                <div class="cart-item">
+                    <div class="cart-item-info">
+                        <h4>${item.name}</h4>
+                        <p>£${item.price.toFixed(2)}</p>
+                    </div>
+                    <button class="remove-btn" onclick="removeFromCart(${item.id})">Remove</button>
+                </div>
+            `;
+        });
+        
+        cartItems.innerHTML = itemsHTML;
+        cartTotal.textContent = total.toFixed(2);
+    }
+}
+
+// Checkout via WhatsApp
+function checkoutWhatsApp() {
+    if (cart.length === 0) {
+        alert('Your cart is empty!');
+        return;
+    }
+    
+    let message = 'Hi Cream & Crumb!%0A%0AI would like to order:%0A%0A';
+    let total = 0;
+    
+    cart.forEach(item => {
+        message += `- ${item.name}: £${item.price.toFixed(2)}%0A`;
+        total += parseFloat(item.price);
+    });
+    
+    message += `%0ATotal: £${total.toFixed(2)}%0A%0APlease confirm!`;
+    
+    const whatsappNumber = '447552245878';
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+    
+    window.open(whatsappURL, '_blank');
+    
+    // Clear cart after checkout
+    cart = [];
+    updateCartDisplay();
+    toggleCart();
+}
